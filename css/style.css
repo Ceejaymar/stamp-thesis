@@ -13,6 +13,9 @@ html {
   @media only screen and (max-width: 56.25em) {
     html {
       font-size: 50%; } }
+  @media only screen and (max-width: 37.5em) {
+    html {
+      font-size: 40%; } }
 
 body {
   height: 100vh;
@@ -33,26 +36,47 @@ body {
     width: 960px;
     display: flex;
     justify-content: space-between; }
+    @media only screen and (max-width: 37.5em) {
+      .home__container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; } }
   .home__text-box {
     width: 50%; }
     @media only screen and (max-width: 62.5em) {
       .home__text-box {
         padding-left: 3rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .home__text-box {
+        width: 75%;
+        padding-left: 0; } }
   .home__heading {
     font-size: 6rem;
     text-transform: capitalize;
     text-align: left;
     font-weight: 400; }
+    @media only screen and (max-width: 37.5em) {
+      .home__heading {
+        text-align: center; } }
   .home__subheading {
     font-size: 2rem;
     font-weight: 300;
     margin-top: 2rem; }
+    @media only screen and (max-width: 37.5em) {
+      .home__subheading {
+        width: 75%;
+        margin: 2rem auto;
+        text-align: center; } }
 
 .home-signup {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 50%; }
+  @media only screen and (max-width: 37.5em) {
+    .home-signup {
+      font-size: 50%;
+      margin-top: 2rem; } }
   .home-signup__heading {
     padding: 2rem 0;
     font-weight: 400;
@@ -64,6 +88,9 @@ body {
     width: 70%;
     border: 0.15rem solid rgba(255, 255, 255, 0.2);
     border-radius: .2rem; }
+    @media only screen and (max-width: 37.5em) {
+      .home-signup__form {
+        width: 100%; } }
   .home-signup__input {
     background-color: rgba(255, 255, 255, 0.1);
     outline: none;
@@ -90,6 +117,9 @@ body {
     text-transform: capitalize;
     font-size: 1.5rem;
     cursor: pointer; }
+    @media only screen and (max-width: 37.5em) {
+      .home-signup__button {
+        width: 100%; } }
     .home-signup__button:hover {
       background-color: #58abe9;
       border: 2px solid #58abe9; }
@@ -100,6 +130,9 @@ body {
     width: 40%;
     text-align: center;
     line-height: 2rem; }
+    @media only screen and (max-width: 37.5em) {
+      .home-signup__tos {
+        width: 50%; } }
     .home-signup__tos a {
       color: #ffffff;
       cursor: pointer; }
@@ -118,6 +151,12 @@ body {
   .footer__nav-item {
     list-style: none;
     margin: 2rem; }
+    @media only screen and (max-width: 37.5em) {
+      .footer__nav-item {
+        margin: 2rem 1rem; } }
+    @media only screen and (max-width: 31.25em) {
+      .footer__nav-item {
+        margin: 2rem .5rem; } }
   .footer__nav-item > a:link,
   .footer__nav-item > a:visited {
     color: #ffffff;
@@ -141,7 +180,13 @@ body {
   .navbar__list-item {
     list-style: none;
     text-transform: capitalize;
-    margin: 2rem; }
+    margin: 2rem 2rem; }
+    @media only screen and (max-width: 31.25em) {
+      .navbar__list-item {
+        margin: 2rem 1.5rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .navbar__list-item {
+        margin: 2rem .5rem; } }
   .navbar__list-item > a:link,
   .navbar__list-item > a:visited {
     text-decoration: none;

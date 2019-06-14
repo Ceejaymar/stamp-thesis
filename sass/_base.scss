@@ -1,12 +1,12 @@
 $c-white: #ffffff;
-
 $c-primary: #2c99ed;
 $c-primary-light: #58abe9;
 
-$screen-large: 62.50em;       // 1000px
-$screen-medium: 56.25em;      // 900px
-$screen-small: 37.5em;        // 600px
-$screen-smallest: 31.25em;    // 500px
+$screen-large: 62.50em;   // 1000px
+$screen-medium: 56.25em;  // 900px
+$screen-small: 37.5em;    // 600px
+$screen-smaller: 31.25em; // 500px
+$screen-smallest: 25em;   // 400px
 
 * {
   margin: 0;
@@ -27,9 +27,9 @@ html {
     font-size: 50%;
   }
 
-  // @media only screen and (max-width: $screen-small) {
-  //   font-size: 40%;
-  // }
+  @media only screen and (max-width: $screen-small) {
+    font-size: 40%;
+  }
 }
 
 body {
