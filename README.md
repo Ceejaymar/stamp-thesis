@@ -4,7 +4,7 @@
 
 ## Demo
 
-Hosted demo: [The Ends - backend](http://the-ends.herokuapp.com)
+Hosted demo: [Stamp website](stamp-thesis.surge.sh)
 
 ## Setup project locally
 
