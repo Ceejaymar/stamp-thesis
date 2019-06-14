@@ -4,7 +4,7 @@
 
 ## Demo
 
-Hosted demo: [Stamp website](stamp-thesis.surge.sh)
+Hosted demo: [Stamp website](http://stamp-thesis.surge.sh/)
 
 ## Setup project locally
 
