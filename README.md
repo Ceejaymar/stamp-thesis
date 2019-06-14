@@ -1,6 +1,6 @@
 # Stamp - Thesis
 
-![alt text](https://firebasestorage.googleapis.com/v0/b/stamp-thesis.appspot.com/o/Screen%20Shot%202019-06-14%20at%206.49.30%20PM.png?alt=media&token=09c87234-277d-450b-833d-fa6b1d8fa5bb "Carlos's Stamp for Thesis")
+![alt text](https://firebasestorage.googleapis.com/v0/b/stamp-thesis.appspot.com/o/website.png?alt=media&token=3e244601-0ef3-4232-9da3-e7b48cce76aa "Carlos's Stamp for Thesis")
 
 ## Demo
 
