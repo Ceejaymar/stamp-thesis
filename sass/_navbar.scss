@@ -1,0 +1,70 @@
+.navbar {
+  color: $c-white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4rem;
+
+  &__brand {
+    font-size: 2rem;
+    text-transform: capitalize;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__list-item {
+    list-style: none;
+    text-transform: capitalize;
+    margin: 2rem;
+  }
+
+  &__list-item > a:link,
+  &__list-item > a:visited {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+
+    &:active,
+    &:focus {
+      color: rgba(255, 255, 255, .4);
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__menu-container {
+    cursor: pointer;
+  }
+
+  &__menu {
+    width: 25px;
+    height: 3px;
+    background-color: $c-white;
+    margin: 6px 0;
+    transition: 0.4s;
+    position: relative;
+
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: -7px;
+      height: 100%;
+      width: 100%;
+      background-color: $c-white;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: -7px;
+      height: 100%;
+      width: 100%;
+      background-color: $c-white;
+    }
+  }
+}
