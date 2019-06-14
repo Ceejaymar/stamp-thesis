@@ -10,6 +10,215 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (max-width: 37.5em) {
+    html {
+      font-size: 40%; } }
 
 body {
-  background-color: blue; }
+  height: 100vh;
+  font-family: 'Roboto';
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/crafting.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  height: 500px; }
+  .home__container {
+    width: 960px;
+    display: flex;
+    justify-content: space-between; }
+    @media only screen and (max-width: 37.5em) {
+      .home__container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; } }
+  .home__text-box {
+    width: 50%; }
+    @media only screen and (max-width: 62.5em) {
+      .home__text-box {
+        padding-left: 3rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .home__text-box {
+        width: 75%;
+        padding-left: 0; } }
+  .home__heading {
+    font-size: 6rem;
+    text-transform: capitalize;
+    text-align: left;
+    font-weight: 400; }
+    @media only screen and (max-width: 37.5em) {
+      .home__heading {
+        text-align: center; } }
+  .home__subheading {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-top: 2rem; }
+    @media only screen and (max-width: 37.5em) {
+      .home__subheading {
+        width: 75%;
+        margin: 2rem auto;
+        text-align: center; } }
+
+.home-signup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%; }
+  @media only screen and (max-width: 37.5em) {
+    .home-signup {
+      font-size: 50%;
+      margin-top: 2rem; } }
+  .home-signup__heading {
+    padding: 2rem 0;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .1rem; }
+  .home-signup__form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    border: 0.15rem solid rgba(255, 255, 255, 0.2);
+    border-radius: .2rem; }
+    @media only screen and (max-width: 37.5em) {
+      .home-signup__form {
+        width: 100%; } }
+  .home-signup__input {
+    background-color: rgba(255, 255, 255, 0.1);
+    outline: none;
+    border: none;
+    color: #ffffff;
+    padding: 1.5rem 1rem;
+    font-size: 1.5rem; }
+    .home-signup__input:focus {
+      background-color: rgba(255, 255, 255, 0.3); }
+    .home-signup__input::placeholder {
+      color: rgba(255, 255, 255, 0.7); }
+    .home-signup__input--email {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+  .home-signup__button {
+    width: 70%;
+    margin-top: -.2rem;
+    padding: 1rem 0;
+    background-color: #2c99ed;
+    border: none;
+    color: inherit;
+    border: 2px solid #2c99ed;
+    border-radius: 0 0 .2rem .2rem;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    cursor: pointer; }
+    @media only screen and (max-width: 37.5em) {
+      .home-signup__button {
+        width: 100%; } }
+    .home-signup__button:hover {
+      background-color: #58abe9;
+      border: 2px solid #58abe9; }
+  .home-signup__tos {
+    padding-top: 2.5rem;
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.7);
+    width: 40%;
+    text-align: center;
+    line-height: 2rem; }
+    @media only screen and (max-width: 37.5em) {
+      .home-signup__tos {
+        width: 50%; } }
+    .home-signup__tos a {
+      color: #ffffff;
+      cursor: pointer; }
+      .home-signup__tos a:hover {
+        text-decoration: underline; }
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4rem;
+  color: #ffffff;
+  font-size: 1.2rem; }
+  .footer__nav {
+    display: flex; }
+  .footer__nav-item {
+    list-style: none;
+    margin: 2rem; }
+    @media only screen and (max-width: 37.5em) {
+      .footer__nav-item {
+        margin: 2rem 1rem; } }
+    @media only screen and (max-width: 31.25em) {
+      .footer__nav-item {
+        margin: 2rem .5rem; } }
+  .footer__nav-item > a:link,
+  .footer__nav-item > a:visited {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase; }
+    .footer__nav-item > a:link:hover,
+    .footer__nav-item > a:visited:hover {
+      text-decoration: underline; }
+
+.navbar {
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4rem; }
+  .navbar__brand {
+    font-size: 2rem;
+    text-transform: capitalize; }
+  .navbar__list {
+    display: flex; }
+  .navbar__list-item {
+    list-style: none;
+    text-transform: capitalize;
+    margin: 2rem 2rem; }
+    @media only screen and (max-width: 31.25em) {
+      .navbar__list-item {
+        margin: 2rem 1.5rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .navbar__list-item {
+        margin: 2rem .5rem; } }
+  .navbar__list-item > a:link,
+  .navbar__list-item > a:visited {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem; }
+    .navbar__list-item > a:link:active, .navbar__list-item > a:link:focus,
+    .navbar__list-item > a:visited:active,
+    .navbar__list-item > a:visited:focus {
+      color: rgba(255, 255, 255, 0.4); }
+    .navbar__list-item > a:link:hover,
+    .navbar__list-item > a:visited:hover {
+      text-decoration: underline; }
+  .navbar__menu-container {
+    cursor: pointer; }
+  .navbar__menu {
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 6px 0;
+    transition: 0.4s;
+    position: relative; }
+    .navbar__menu:before {
+      content: "";
+      position: absolute;
+      top: -7px;
+      height: 100%;
+      width: 100%;
+      background-color: #ffffff; }
+    .navbar__menu:after {
+      content: "";
+      position: absolute;
+      bottom: -7px;
+      height: 100%;
+      width: 100%;
+      background-color: #ffffff; }
